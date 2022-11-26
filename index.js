@@ -351,8 +351,8 @@ class WhatsappCloud {
             throw new Error('"bodyText" is required in making a request');
         if (!headerText)
             throw new Error('"headerText" is required in making a request');
-        if (!footerText)
-            throw new Error('"footerText" is required in making a request');
+      //if (!footerText)
+          //throw new Error('"footerText" is required in making a request');
         if (!actionText)
             throw new Error('"actionText" is required in making a request')
 
