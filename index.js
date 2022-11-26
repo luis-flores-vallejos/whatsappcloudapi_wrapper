@@ -349,8 +349,8 @@ class WhatsappCloud {
 
         if (!bodyText)
             throw new Error('"bodyText" is required in making a request');
-     //   if (!headerText)
-     //       throw new Error('"headerText" is required in making a request');
+        if (!headerText)
+            throw new Error('"headerText" is required in making a request');
      //   if (!footerText)
           //throw new Error('"footerText" is required in making a request');
         if (!actionText)
@@ -425,10 +425,10 @@ class WhatsappCloud {
             type: 'interactive',
             interactive: {
                 type: 'list',
-         //       header: {
-         //           type: 'text',
-         //           text: headerText,
-         //       },
+                header: {
+                    type: 'text',
+                    text: headerText,
+                },
                 body: {
                     text: bodyText,
                 },
