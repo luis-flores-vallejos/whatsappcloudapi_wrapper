@@ -25,11 +25,11 @@ class WhatsappCloud {
             throw new Error('Missing "senderPhoneNumberId".');
         }
 
-        if (graphAPIVersion) {
-            signale.warn(
-                `Please note, the default "graphAPIVersion" is v13.0. You are using ${graphAPIVersion}. This may result in quirky behavior.`
-            );
-        }
+        //if (graphAPIVersion) {
+         //   signale.warn(
+         //       `Please note, the default "graphAPIVersion" is v13.0. You are using ${graphAPIVersion}. This may result in quirky behavior.`
+         //   );
+       //}
 
         this._fetchAssistant = ({ baseUrl, url, method, headers, body }) => {
             return new Promise((resolve, reject) => {
