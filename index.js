@@ -52,21 +52,21 @@ class WhatsappCloud {
                 }
 
                 if (!method) {
-                    signale.warn(
-                        `WARNING: "method" is missing. The default method will default to ${defaultMethod}. If this is not what you want, please specify the method.`
-                    );
+                  //  signale.warn(
+                  //      `WARNING: "method" is missing. The default method will default to ${defaultMethod}. If this is not what you want, please specify the method.`
+                  //  );
                 }
 
                 if (!headers) {
-                    signale.warn(`WARNING: "headers" is missing.`);
+                  //  signale.warn(`WARNING: "headers" is missing.`);
                 }
 
                 if (method?.toUpperCase() === 'POST' && !body) {
-                    signale.warn(
-                        `WARNING: "body" is missing. The default body will default to ${JSON.stringify(
-                            defaultBody
-                        )}. If this is not what you want, please specify the body.`
-                    );
+                    //signale.warn(
+                    //    `WARNING: "body" is missing. The default body will default to ${JSON.stringify(
+                    //        defaultBody
+                    //    )}. If this is not what you want, please specify the body.`
+                    //);
                 }
 
                 method = method?.toUpperCase() || defaultMethod;
